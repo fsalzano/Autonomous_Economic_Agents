@@ -1,0 +1,87 @@
+{
+  "benchmark": {
+    "timestampUtc": "2026-07-27T14:00:50.095Z",
+    "rpcHost": "eth-sepolia.g.alchemy.com",
+    "chainId": "11155111",
+    "startBlockNumber": 11362049,
+    "startBlockTimestampUtc": "2026-07-27T13:58:48.000Z",
+    "contractAddress": "0x9451b23EE7Ca415D637C2ac6F32B2B216c45b5B7",
+    "adminAddress": "0x65700d06410370f99f1C6FADB1D6b87612c57bC4",
+    "agentId": "1785160729984",
+    "compiler": "solc 0.8.20; optimizer enabled; 200 runs",
+    "ethPriceUsd": 1953.56,
+    "ethPriceDate": "not-recorded",
+    "samples": 1000,
+    "warmupCalls": 20,
+    "batchRuns": 3
+  },
+  "setConstitution": {
+    "transactionHash": "0xfa73f8e43b888a89b8341294b61c81137026d65a5a7b6c1d6dbec1ac5b43cbe9",
+    "blockNumber": 11362050,
+    "gasUsed": "116989",
+    "effectiveGasPriceWei": "1010204903",
+    "effectiveGasPriceGwei": 1.010204903,
+    "feeWei": "118182861397067",
+    "feeEth": 0.000118182861397067,
+    "projectedCostUsd": 0.2308773107108542,
+    "confirmationLatencyMs": 12769.4031
+  },
+  "authorizeAction": {
+    "invocation": "eth_call",
+    "gasEstimate": "34114",
+    "failedAuthorizations": 0,
+    "samples": 1000,
+    "meanMs": 67.60926699899997,
+    "medianMs": 65.75809699999809,
+    "stdDevMs": 7.15552166577912,
+    "minMs": 60.21300200000405,
+    "p95Ms": 79.90513024999963,
+    "p99Ms": 94.04246838000056,
+    "maxMs": 150.62138300000152,
+    "ci95LowMs": 67.1657631713133,
+    "ci95HighMs": 68.05277082668664
+  },
+  "settleActionBatch": {
+    "actionsPerBatch": 1000,
+    "tokensPerBatch": "100000",
+    "firstSettlement": {
+      "transactionHash": "0x8581058b4a8d9f67b14a1c89a4f88ed508cb9cc497e1bdbe51943c54eaa50035",
+      "blockNumber": 11362057,
+      "gasUsed": "52408",
+      "effectiveGasPriceWei": "1098278385",
+      "effectiveGasPriceGwei": 1.098278385,
+      "feeWei": "57558573601080",
+      "feeEth": 0.00005755857360108,
+      "projectedCostUsd": 0.11244412704412583,
+      "confirmationLatencyMs": 12776.362260999987
+    },
+    "steadyStateRuns": [
+      {
+        "transactionHash": "0xf1dd77b8be84dd84af86fa97620c0706a9c533975d26ad233c8c22ee242ec641",
+        "blockNumber": 11362058,
+        "gasUsed": "35308",
+        "effectiveGasPriceWei": "1060193812",
+        "effectiveGasPriceGwei": 1.060193812,
+        "feeWei": "37433323114096",
+        "feeEth": 0.000037433323114096,
+        "projectedCostUsd": 0.07312824270277338,
+        "confirmationLatencyMs": 12734.037895999994
+      },
+      {
+        "transactionHash": "0x4d7b268081e7d50b9bd849f9c4de194e07840e0fd49501ae3f1f5a845c1e95ba",
+        "blockNumber": 11362059,
+        "gasUsed": "35308",
+        "effectiveGasPriceWei": "1057951380",
+        "effectiveGasPriceGwei": 1.05795138,
+        "feeWei": "37354147325040",
+        "feeEth": 0.00003735414732504,
+        "projectedCostUsd": 0.07297356804830514,
+        "confirmationLatencyMs": 12750.021732000008
+      }
+    ],
+    "steadyGasMean": 35308,
+    "steadyGasPriceGweiMean": 1.059072596,
+    "steadyProjectedCostUsdMean": 0.07305090537553927,
+    "steadyProjectedCostPerActionUsd": 0.00007305090537553927
+  }
+}
