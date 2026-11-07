@@ -1,4 +1,4 @@
-# ICAIF_Autonomous_Economic_Agents
+# Autonomous_Economic_Agents
 
 This project implements a governance framework for Autonomous Economic Agents (AEAs), providing an on-chain Policy Decision Point (PDP) and an off-chain Policy Enforcement Point (PEP) via a Gateway.
 
