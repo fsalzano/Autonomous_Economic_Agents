@@ -5,18 +5,14 @@
     "chainId": "11155111",
     "startBlockNumber": 11362049,
     "startBlockTimestampUtc": "2026-07-27T13:58:48.000Z",
-    "contractAddress": "0x9451b23EE7Ca415D637C2ac6F32B2B216c45b5B7",
-    "adminAddress": "0x65700d06410370f99f1C6FADB1D6b87612c57bC4",
     "agentId": "1785160729984",
     "compiler": "solc 0.8.20; optimizer enabled; 200 runs",
     "ethPriceUsd": 1953.56,
-    "ethPriceDate": "not-recorded",
     "samples": 1000,
     "warmupCalls": 20,
     "batchRuns": 3
   },
   "setConstitution": {
-    "transactionHash": "0xfa73f8e43b888a89b8341294b61c81137026d65a5a7b6c1d6dbec1ac5b43cbe9",
     "blockNumber": 11362050,
     "gasUsed": "116989",
     "effectiveGasPriceWei": "1010204903",
@@ -45,7 +41,6 @@
     "actionsPerBatch": 1000,
     "tokensPerBatch": "100000",
     "firstSettlement": {
-      "transactionHash": "0x8581058b4a8d9f67b14a1c89a4f88ed508cb9cc497e1bdbe51943c54eaa50035",
       "blockNumber": 11362057,
       "gasUsed": "52408",
       "effectiveGasPriceWei": "1098278385",
@@ -57,7 +52,6 @@
     },
     "steadyStateRuns": [
       {
-        "transactionHash": "0xf1dd77b8be84dd84af86fa97620c0706a9c533975d26ad233c8c22ee242ec641",
         "blockNumber": 11362058,
         "gasUsed": "35308",
         "effectiveGasPriceWei": "1060193812",
@@ -68,7 +62,6 @@
         "confirmationLatencyMs": 12734.037895999994
       },
       {
-        "transactionHash": "0x4d7b268081e7d50b9bd849f9c4de194e07840e0fd49501ae3f1f5a845c1e95ba",
         "blockNumber": 11362059,
         "gasUsed": "35308",
         "effectiveGasPriceWei": "1057951380",
