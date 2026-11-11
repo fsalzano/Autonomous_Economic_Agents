@@ -15,7 +15,7 @@ async function main() {
     const DEPLOYER_KEY = process.env.DEPLOYER_PRIVATE_KEY;
 
     if (!RPC_URL || !DEPLOYER_KEY) {
-        console.error("❌ ERRORE: SEPOLIA_RPC_URL o DEPLOYER_PRIVATE_KEY mancanti nel .env");
+        console.error("❌ ERROR: SEPOLIA_RPC_URL or DEPLOYER_PRIVATE_KEY missing in .env");
         process.exit(1);
     }
 
@@ -24,18 +24,18 @@ async function main() {
 
     console.log(`👤 Deployer Account: ${wallet.address}`);
     const balance = await provider.getBalance(wallet.address);
-    console.log(`💰 Saldo Account:    ${ethers.formatEther(balance)} SepoliaETH\n`);
+    console.log(`💰 Account Balance: ${ethers.formatEther(balance)} SepoliaETH\n`);
 
-    // 1. Lettura del codice Solidity
+    // 1. Read the Solidity source code
     const contractPath = path.resolve('contracts', 'AEAEconomicAgentContract.sol');
     if (!fs.existsSync(contractPath)) {
-        console.error(`❌ File non trovato: ${contractPath}`);
+        console.error(`❌ File not found: ${contractPath}`);
         process.exit(1);
     }
     const sourceCode = fs.readFileSync(contractPath, 'utf8');
 
-    // 2. Compilazione al volo con solc
-    console.log("⚙️  Compilazione dello smart contract con solc 0.8.20...");
+    // 2. Compile on the fly with solc
+    console.log("⚙️  Compiling the smart contract with solc 0.8.20...");
     const input = {
         language: 'Solidity',
         sources: {
@@ -57,7 +57,7 @@ async function main() {
     if (output.errors) {
         const severeErrors = output.errors.filter(e => e.severity === 'error');
         if (severeErrors.length > 0) {
-            console.error("❌ Errore durante la compilazione:");
+            console.error("❌ Error during compilation:");
             console.error(severeErrors);
             process.exit(1);
         }
@@ -67,8 +67,8 @@ async function main() {
     const abi = contractData.abi;
     const bytecode = contractData.evm.bytecode.object;
 
-    // 3. Deploy su Sepolia
-    console.log("🚀 Invio transazione di deploy su Sepolia...");
+    // 3. Deploy to Sepolia
+    console.log("🚀 Sending deployment transaction to Sepolia...");
     const factory = new ethers.ContractFactory(abi, bytecode, wallet);
     const contract = await factory.deploy(wallet.address);
     
@@ -76,10 +76,10 @@ async function main() {
     const deployedAddress = await contract.getAddress();
 
     console.log("\n=================================================");
-    console.log(`✅ CONTRATTO DEPLOYATO CON SUCCESSO!`);
-    console.log(`📍 Indirizzo: ${deployedAddress}`);
+    console.log(`✅ CONTRACT DEPLOYED SUCCESSFULLY!`);
+    console.log(`📍 Address: ${deployedAddress}`);
     console.log("=================================================");
-    console.log(`\n👉 Copia questo indirizzo nel tuo .env alla voce CONTRACT_ADDRESS!`);
+    console.log(`\n👉 Copy this address to your .env under CONTRACT_ADDRESS!`);
 }
 
 main().catch(console.error);
