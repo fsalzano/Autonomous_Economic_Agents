@@ -7,7 +7,6 @@
     "startBlockTimestampUtc": "2026-07-27T13:58:48.000Z",
     "agentId": "1785160729984",
     "compiler": "solc 0.8.20; optimizer enabled; 200 runs",
-    "ethPriceUsd": 1953.56,
     "samples": 1000,
     "warmupCalls": 20,
     "batchRuns": 3
@@ -19,7 +18,6 @@
     "effectiveGasPriceGwei": 1.010204903,
     "feeWei": "118182861397067",
     "feeEth": 0.000118182861397067,
-    "projectedCostUsd": 0.2308773107108542,
     "confirmationLatencyMs": 12769.4031
   },
   "authorizeAction": {
@@ -47,7 +45,6 @@
       "effectiveGasPriceGwei": 1.098278385,
       "feeWei": "57558573601080",
       "feeEth": 0.00005755857360108,
-      "projectedCostUsd": 0.11244412704412583,
       "confirmationLatencyMs": 12776.362260999987
     },
     "steadyStateRuns": [
@@ -58,7 +55,6 @@
         "effectiveGasPriceGwei": 1.060193812,
         "feeWei": "37433323114096",
         "feeEth": 0.000037433323114096,
-        "projectedCostUsd": 0.07312824270277338,
         "confirmationLatencyMs": 12734.037895999994
       },
       {
@@ -68,13 +64,10 @@
         "effectiveGasPriceGwei": 1.05795138,
         "feeWei": "37354147325040",
         "feeEth": 0.00003735414732504,
-        "projectedCostUsd": 0.07297356804830514,
         "confirmationLatencyMs": 12750.021732000008
       }
     ],
     "steadyGasMean": 35308,
-    "steadyGasPriceGweiMean": 1.059072596,
-    "steadyProjectedCostUsdMean": 0.07305090537553927,
-    "steadyProjectedCostPerActionUsd": 0.00007305090537553927
+    "steadyGasPriceGweiMean": 1.059072596
   }
 }
