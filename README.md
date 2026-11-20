@@ -1,10 +1,10 @@
 # Autonomous_Economic_Agents
 
-This project implements a governance framework for Autonomous Economic Agents (AEAs), providing an on-chain Policy Decision Point (PDP) and an off-chain Policy Enforcement Point (PEP) via a Gateway[...]
+This project implements a governance framework for Autonomous Economic Agents (AEAs), providing an on-chain Policy Decision Point (PDP) and an off-chain Policy Enforcement Point (PEP) via a Gateway.
 
 ## Overview
 
-The system ensures that AEA actions (specifically for a "Codex" agent) comply with a predefined "Constitution" stored on the Ethereum Sepolia blockchain. It manages AI and economic budgets, enforce[...]
+The system ensures that AEA actions (specifically for a "Codex" agent) comply with a predefined "Constitution" stored on the Ethereum Sepolia blockchain. It manages AI and economic budgets, enforces tool allowlists, and optimizes costs through batched settlement.
 
 ### Key Components
 
