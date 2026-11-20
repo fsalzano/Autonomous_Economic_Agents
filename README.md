@@ -1,10 +1,10 @@
 # Autonomous_Economic_Agents
 
-This project implements a governance framework for Autonomous Economic Agents (AEAs), providing an on-chain Policy Decision Point (PDP) and an off-chain Policy Enforcement Point (PEP) via a Gateway.
+This project implements a governance framework for Autonomous Economic Agents (AEAs), providing an on-chain Policy Decision Point (PDP) and an off-chain Policy Enforcement Point (PEP) via a Gateway[...]
 
 ## Overview
 
-The system ensures that AEA actions (specifically for a "Codex" agent) comply with a predefined "Constitution" stored on the Ethereum Sepolia blockchain. It manages AI and economic budgets, enforces tool allowlists, and optimizes costs through batched settlement.
+The system ensures that AEA actions (specifically for a "Codex" agent) comply with a predefined "Constitution" stored on the Ethereum Sepolia blockchain. It manages AI and economic budgets, enforce[...]
 
 ### Key Components
 
@@ -56,6 +56,12 @@ The gateway will listen on port 3000 by default.
 node scripts/benchmark_sec7.js
 ```
 Results will be saved in the `benchmark_results` directory.
+
+## What is measured
+
+The benchmark reports measured gas usage and gas prices, wei and ETH transaction fees, and authorization and confirmation latencies. Conversion to fiat currency is opt-in and, when enabled, requires a dated ETH/USD reference supplied together through `ETH_PRICE_USD` and `ETH_PRICE_DATE`.
+
+Currency remains the appropriate denomination for agent budgets because the contract holds and settles budget value. The harness does not convert execution costs into unsupported fiat-currency claims.
 
 ## Project Structure
 
